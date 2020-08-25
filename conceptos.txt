@@ -1,0 +1,101 @@
+Instalar un paquete:
+npm install <paquete>
+--save: requerido para vivir en produccion
+--save-dev: solo es necesario para desarrollo
+
+install = i
+--save-dev = D
+--save = S
+
+Instalar paquete de forma global:
+npm install -g <paquete>
+
+Saber si tengo un paquete instalado global:
+npm list -g --depth 0
+
+
+Instalar de forma opcional:
+npm install <paquete> -O
+
+Saber si requiere financiamiento
+npm fund
+
+Simular una instalacion
+npm install <paquete> --dry-run
+
+Forzar una Instalacion:
+npm install <paquete> -f
+-f = --force
+
+Reinstalar todas las dependencias de un proyecto:
+npm install
+
+Instalar una version en particular:
+npm install <paquete>@version 
+
+Listar paquetes del proyecto
+npm list
+
+Muestra las versiones de los paquetes instalados y su ultima version
+npm outdate
+
+Muestra mas detallado la ejecucion del comando
+npm <comando> --dd
+
+Hacer update de os paquetes que no esten en la version
+npm update
+
+Hacer update de un paquete en particular
+npm install <paquete>@latest
+
+Desinstalar un paquete
+npm uninstall <paquete>
+
+Desinstalar de node_modules pero lo mantiene en el package.json:
+npm uninstall <paquete> --no-save
+
+egamma
+Paquete que compara lo que hay en node_modules contra el package.json
+
+Versionado Semantico
+^ significa que solo se actualizaran los paquetes en sus cambios menores o patches
+~ significa que solo se actualizaran los paquetes en sus  patches
+
+Versionamiento:
+3.9.2
+Major.Menor.Patch
+
+scripts: son comandos que podemos establecer para ejecutar desde la consola
+para correrlos: npm run <comando>
+
+verbose: ver que pasa durante la ejecucion de un comando
+ej. npm run build --dd
+
+Eliminar el cache
+npm cache clean --force 
+
+Verificar que el cache este limpio:
+nom cache verify
+
+paquete que sirve para borrar node_modules
+instalar: npm install -g rimraf
+ejecutar: rimraf node_modules
+
+Auditar un proyecto:
+npm audit
+
+npm audit --json : genera la informacion en un archivo json
+
+npm audit fix : Repara las vulnerabilidades de los paquetes del proyecto
+
+npm link: emula la instalacion de un paquete en local
+tambien se puede instalar normal con el path (npm install <path>)
+
+Publicar en npm
+1-Tener usuario
+2-loguearse desde la terminal (npm adduser)
+3-npm publish (lee el package.json)
+
+Consideraciones:
+1-Buen readme
+2-Conectarlo a un repositorio
