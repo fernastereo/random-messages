@@ -16,7 +16,7 @@ random-msg
 
 # Contributing
 
-If someone wants to add or improve something, I invite you to collaborate directly in this repository: [random-msg](https://github.com/fernastereo/random-messages)
+If someone wants to add or improve something, I invite you to collaborate directly in this repository: [random-messages](https://github.com/fernastereo/random-messages)
 
 # License
 
